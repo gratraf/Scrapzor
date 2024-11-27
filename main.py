@@ -87,7 +87,7 @@ def scrape_recursive(url, conn, visited_urls, max_depth=2, current_depth=0):
 
 # Main function
 def main():
-    yaml_file = "urls.yaml"  # Specify the path to your YAML file
+    yaml_file = "config.yaml"  # Specify the path to your YAML file
     urls = load_urls_from_yaml(yaml_file)
 
     # Initialize database connection
