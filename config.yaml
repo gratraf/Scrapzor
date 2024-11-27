@@ -1,0 +1,29 @@
+urls:
+  - https://webscraper.io/test-sites/e-commerce/allinone
+  - https://webscraper.io/test-sites/e-commerce/static
+  - https://webscraper.io/test-sites/e-commerce/ajax
+
+
+scraper_config:
+  max_depth: 3          
+  user_agent: "Mozilla/5.0 (compatible; MyScraperBot/1.0)"
+  timeout: 10           
+
+
+database:
+  type: sqlite
+  name: scraper_data.db
+
+
+output:
+  save_location: /data/output/
+  log_file: scraper.log
+
+scraping_rules:
+  allowed_domains:
+    - example.com
+    - another-example.net
+  ignored_paths:
+    - /login
+    - /signup
+
